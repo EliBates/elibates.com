@@ -96,10 +96,5 @@ export const FRONT_END_TECHNOLOGIES: Array<Technology> = [
     name: 'Svelte',
     imageUrl: '/technologies/svelte',
     websiteUrl: '',
-  },
-  {
-    name: 'Flutter',
-    imageUrl: '/technologies/flutter',
-    websiteUrl: '',
   }
 ];

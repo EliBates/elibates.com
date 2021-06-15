@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'sofia-pro';
+	src: url('/Sofia Pro Regular Az.otf') format('opentype');
+}
+
 $breakpoints: (
 	'small': (
 		min-width: 767px
@@ -37,7 +42,12 @@ $breakpoints: (
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Roboto, 'sans-serif';
+	font-family: 'sofia-pro', 'roboto', sans-serif;
+}
+
+p,
+h4 {
+	font-family: 'roboto', sans-serif;
 }
 
 .container {
@@ -68,6 +78,13 @@ $breakpoints: (
 	border-radius: 0.8rem;
 	padding: 1rem;
 	margin-top: 2rem;
+	overflow: hidden;
+	position: relative;
+	transition: all 400ms ease;
+}
+
+.page:hover {
+	background-color: rgba(255, 255, 255, 0.742);
 }
 
 .flex {
@@ -83,6 +100,7 @@ $breakpoints: (
 }
 
 .content-text {
+	margin-bottom: 1rem;
 	@include respond-to('small') {
 		margin-right: 2rem;
 	}
@@ -109,15 +127,14 @@ $breakpoints: (
 	}
 }
 
-.page {
-	overflow: hidden;
-	position: relative;
-}
 .section-image {
 	display: block;
 	height: 2.5rem;
 	@include respond-to('small') {
 		height: 2rem;
+	}
+	@include respond-to('large') {
+		height: 3rem;
 	}
 }
 .section-heading {
@@ -130,23 +147,45 @@ $breakpoints: (
 	margin-bottom: 0.7rem;
 	border-bottom: 1px solid rgb(198, 198, 198);
 	@include respond-to('small') {
-		flex-direction: row;
+		flex-direction: row-reverse;
+	}
+}
+.muted {
+	text-align: center;
+	color: hsl(0, 0%, 60%);
+}
+
+.spacer {
+	height: 10rem;
+}
+
+.section-title {
+	margin-top: 1rem;
+	@include respond-to('small') {
+		margin-top: 0;
 	}
 }
 .section-title > p {
 	margin-top: 0;
 	font-size: 1rem;
-	color: hsl(0, 0%, 40%);
+	color: hsl(0, 0%, 45%);
 	font-style: italic;
 	text-align: center;
+
+	@include respond-to('small') {
+		text-align: left;
+	}
+}
+
+.section-title > h2 {
+	color: hsl(0, 0%, 25%);
 }
 
 .section-content p {
 	margin-bottom: 1rem;
 }
 
-.section-content p,
-q {
+.section-content q {
 	font-size: 1rem;
 	line-height: 1.4rem;
 }

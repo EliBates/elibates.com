@@ -10,11 +10,14 @@
 <svelte:head>
 	<title>Eli Bates - Skills</title>
 </svelte:head>
-<section class="page" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
-	<h1>Technologies I Use</h1>
-</section>
 
-<section class="page" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
+<h1>Technologies I use for building the web</h1>
+<h3>
+	I use a variety of web development technlogies when I work on my projects, but i'm most proficient
+	with what's on this list.
+</h3>
+
+<section class="page" in:fly={{ y: 200, duration: 1500 }} out:fade={{ duration: 0 }}>
 	<h2>Front End</h2>
 	<div class="wrapper">
 		{#each FRONT_END_TECHNOLOGIES as card}
@@ -29,7 +32,7 @@
 	</div>
 </section>
 
-<section class="page" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
+<section class="page" in:fly={{ y: 200, delay: 1000, duration: 2000 }} out:fade={{ duration: 0 }}>
 	<h2>Back End</h2>
 	<div class="wrapper">
 		{#each BACK_END_TECHNOLOGIES as card}
@@ -44,7 +47,7 @@
 	</div>
 </section>
 
-<section class="page" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
+<section class="page" in:fly={{ y: 200, delay: 2000, duration: 2000 }} out:fade={{ duration: 0 }}>
 	<h2>Databases</h2>
 	<div class="wrapper">
 		{#each DB_TECHNOLOGIES as card}
@@ -58,10 +61,26 @@
 		{/each}
 	</div>
 </section>
+<div class="spacer" />
 
 <style lang="scss">
+	h1 {
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		text-align: center;
+		@include respond-to('small') {
+			font-size: 1.8rem;
+		}
+	}
 	h2 {
 		margin-bottom: 1rem;
+	}
+
+	h3 {
+		margin-top: 0.7rem;
+		text-align: left;
+		color: hsl(0, 0%, 30%);
 	}
 	.wrapper {
 		overflow: hidden;

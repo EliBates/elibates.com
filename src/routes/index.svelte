@@ -9,20 +9,22 @@
 </script>
 
 <svelte:head>
-	<title>Welcome</title>
+	<title>Eli Bates - Web Developer</title>
 </svelte:head>
 
 {#if ready}
 	<section class="page flex">
 		<h2 class="typewriter">Hi my name is Eli.</h2>
 	</section>
-	<a href="/about">
+	<!-- <a href="/about">
 		<section
 			class="page flex between"
-			in:fly={{ y: 200, duration: 2000, delay: 3000 }}
+			in:fly={{ y: 200, duration: 1000, delay: 3000 }}
 			out:fade={{ duration: 0 }}
 		>
-			<h2 class="learn" in:fly={{ x: -200, duration: 2000, delay: 3000 }}>Learn more about me</h2>
+			<h2 class="learn" in:fly={{ x: -200, duration: 1000, delay: 3000 }}>
+				I'm a Full Stack Web Developer
+			</h2>
 			<div class="icon">
 				<Icon data={faArrowRight} style="color: hsl(0, 0%, 20%); cursor: pointer;" scale="2" />
 			</div>
@@ -31,17 +33,25 @@
 	<a href="/contact">
 		<section
 			class="page flex between"
-			in:fly={{ y: 200, duration: 1000, delay: 5000 }}
+			in:fly={{ y: -200, duration: 1000, delay: 4000 }}
 			out:fade={{ duration: 0 }}
 		>
-			<h2 class="learn" in:fly={{ x: -200, duration: 2000, delay: 3000 }}>
-				I can build you a website
-			</h2>
+			<h2 class="learn" in:fly={{ x: 200, duration: 1000, delay: 4000 }}>Connect With Me</h2>
 			<div class="icon">
 				<Icon data={faArrowRight} style="color: hsl(0, 0%, 20%); cursor: pointer;" scale="2" />
 			</div>
 		</section>
-	</a>
+	</a> -->
+	<section
+		class="page flex between"
+		in:fly={{ y: -200, duration: 1000, delay: 4000 }}
+		out:fade={{ duration: 0 }}
+	>
+		<h2 class="learn" in:fly={{ x: 200, duration: 1000, delay: 4000 }}>Connect With Me</h2>
+		<div class="icon">
+			<Icon data={faArrowRight} style="color: hsl(0, 0%, 20%); cursor: pointer;" scale="2" />
+		</div>
+	</section>
 {/if}
 
 <style lang="scss">
@@ -62,13 +72,13 @@
 
 	.typewriter::before {
 		background: white;
-		animation: stagger 4s steps(18) forwards 1s;
+		animation: stagger 2s steps(18) forwards 1s;
 	}
 
 	.typewriter::after {
 		width: 0.125em;
 		background: transparent;
-		animation: stagger 4s steps(18) forwards 1s, blink 600ms steps(18) 10;
+		animation: stagger 2s steps(18) forwards 1s, blink 600ms steps(18) 10;
 	}
 
 	@keyframes blink {

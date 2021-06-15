@@ -19,7 +19,7 @@
 <div class="navbarMobile">
 	<div class="topBar">
 		<button class="menuBtn" on:click={(e) => (drawerOpen = true)} href=""
-			><Icon data={faBars} style="color: hsl(0, 0%, 20%);; cursor: pointer;" scale="2" /></button
+			><Icon data={faBars} style="color: hsl(0, 0%, 20%); cursor: pointer;" scale="2" /></button
 		>
 		<a href="/">
 			<h1>Eli Bates</h1>
@@ -47,7 +47,7 @@
 				</li>
 				<li>
 					<a class="navLink" on:click={closeDrawer} href="/contact"
-						><Icon data={faCommentsDollar} style="color: rgb(255, 204, 0);" /><span>Hire Me</span
+						><Icon data={faCommentsDollar} style="color: rgb(255, 204, 0);" /><span>Contact Me</span
 						></a
 					>
 				</li>
