@@ -23,7 +23,7 @@
 			</a>
 		</li>
 		<li>
-			<a class="navLink" href="/about"
+			<a class="navLink" href="/"
 				><Icon data={faUser} scale="1.3" style="color: blue;" /><span>About Me</span></a
 			>
 		</li>
@@ -54,7 +54,6 @@
 		width: 15rem;
 		height: 100vh;
 		box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.4);
-		z-index: 200;
 
 		@include respond-to('small') {
 			position: fixed;

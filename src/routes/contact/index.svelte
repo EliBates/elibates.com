@@ -69,8 +69,8 @@
 
 <section class="page main" in:fly={{ y: 200, duration: 1500 }} out:fade={{ duration: 0 }}>
 	<div class="title">
-		<h1>I'd be happy to hear from you!</h1>
-		<p class="muted">I typically respond within a day</p>
+		<h1>Contact Me</h1>
+		<p class="muted">I will respond as soon as I can!</p>
 	</div>
 	<form bind:this={form} on:submit|preventDefault={onSubmit} method="post" class="contact-form">
 		<div class="form-field">

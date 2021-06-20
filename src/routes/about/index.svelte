@@ -82,7 +82,7 @@
 
 		<div class="section-title">
 			<h3>Telecommunications Technician</h3>
-			<p>Jun 2013 - Jun 2019</p>
+			<p>Jun 2013 - Jun 2019 | U.S. Department of Defense</p>
 		</div>
 	</div>
 	<div class="section-content">

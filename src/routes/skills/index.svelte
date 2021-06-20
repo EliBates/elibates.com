@@ -1,7 +1,8 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import {
-		FRONT_END_TECHNOLOGIES,
+		CORE_TECHNOLOGIES,
+		FRAMEWORKS,
 		BACK_END_TECHNOLOGIES,
 		DB_TECHNOLOGIES
 	} from '$lib/technologies';
@@ -11,16 +12,18 @@
 	<title>Eli Bates - Skills</title>
 </svelte:head>
 
-<h1>Technologies I use for building the web</h1>
-<h3>
-	I use a variety of web development technlogies when I work on my projects, but i'm most proficient
-	with what's on this list.
-</h3>
+<section class="page">
+	<h1>Technologies I use for building the web</h1>
+	<h3>
+		I use a variety of web development technlogies in my projects, but i'm most proficient with
+		what's on this list.
+	</h3>
+</section>
 
 <section class="page" in:fly={{ y: 200, duration: 1500 }} out:fade={{ duration: 0 }}>
-	<h2>Front End</h2>
+	<h2>Core Languages</h2>
 	<div class="wrapper">
-		{#each FRONT_END_TECHNOLOGIES as card}
+		{#each CORE_TECHNOLOGIES as card}
 			<div class="card">
 				<picture>
 					<source type="image/avif" srcset={'/avif' + card.imageUrl + '.avif'} />
@@ -33,7 +36,22 @@
 </section>
 
 <section class="page" in:fly={{ y: 200, delay: 1000, duration: 2000 }} out:fade={{ duration: 0 }}>
-	<h2>Back End</h2>
+	<h2>Frameworks</h2>
+	<div class="wrapper">
+		{#each FRAMEWORKS as card}
+			<div class="card">
+				<picture>
+					<source type="image/avif" srcset={'/avif' + card.imageUrl + '.avif'} />
+					<img src={card.imageUrl + '.png'} alt="" />
+				</picture>
+				<h3>{card.name}</h3>
+			</div>
+		{/each}
+	</div>
+</section>
+
+<section class="page" in:fly={{ y: 200, delay: 2000, duration: 2000 }} out:fade={{ duration: 0 }}>
+	<h2>Server</h2>
 	<div class="wrapper">
 		{#each BACK_END_TECHNOLOGIES as card}
 			<div class="card">
@@ -47,7 +65,7 @@
 	</div>
 </section>
 
-<section class="page" in:fly={{ y: 200, delay: 2000, duration: 2000 }} out:fade={{ duration: 0 }}>
+<section class="page" in:fly={{ y: 200, delay: 3000, duration: 2000 }} out:fade={{ duration: 0 }}>
 	<h2>Databases</h2>
 	<div class="wrapper">
 		{#each DB_TECHNOLOGIES as card}
@@ -66,7 +84,6 @@
 <style lang="scss">
 	h1 {
 		text-align: center;
-		margin-top: 1rem;
 		font-size: 1.4rem;
 		text-align: center;
 		@include respond-to('small') {

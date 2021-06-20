@@ -31,7 +31,7 @@
 		<nav transition:fly={{ x: -200, duration: 500 }} role="navigation">
 			<ul>
 				<li>
-					<a class="navLink" on:click={closeDrawer} href="/about"
+					<a class="navLink" on:click={closeDrawer} href="/"
 						><Icon data={faUser} style="color: blue;" /><span>About Me</span></a
 					>
 				</li>

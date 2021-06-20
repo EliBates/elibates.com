@@ -1,4 +1,5 @@
 <script>
+	import ImageViewer from '$lib/ImageViewer/image-viewer.svelte';
 	import { fade, fly } from 'svelte/transition';
 </script>
 
@@ -7,6 +8,38 @@
 </svelte:head>
 
 <h1>My Projects</h1>
+<section class="page main" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
+	<h3>Web Development Startup (Full-Stack) <span>June 2021</span></h3>
+	<p>
+		I'm currently working on my startup company website BatesWebTech.com. I plan to go live with
+		this around October 2021.
+	</p>
+	<p>I'm using the framework Next.js as the core technology in this project.</p>
+
+	<h4>Technologies Used</h4>
+	<div class="technologies-wrapper">
+		<picture>
+			<source type="image/avif" srcset={'/avif/technologies/nextjs.avif'} />
+			<img src={'/technologies/nextjs.png'} alt="Next JS Logo" />
+		</picture>
+	</div>
+	<div class="project-images">
+		<ImageViewer
+			src="bateswebtech1"
+			alt="startup company project image"
+			thumb="bateswebtech1thumb"
+			avif={true}
+			height="5vh"
+		/>
+		<ImageViewer
+			src="bateswebtech2"
+			alt="startup company project image"
+			thumb="bateswebtech2thumb"
+			avif={true}
+			height="5vh"
+		/>
+	</div>
+</section>
 <section class="page main" in:fly={{ duration: 2000 }} out:fade={{ duration: 0 }}>
 	<h3>Real Estate Website (Full-Stack) <span>April 2021</span></h3>
 	<p>
@@ -21,29 +54,45 @@
 		<picture>
 			<source type="image/avif" srcset={'/avif/technologies/vue.avif'} />
 			<img src={'/technologies/vue.png'} alt="Vue JS Logo" />
+			<p class="text-center">Vue.JS</p>
 		</picture>
 		<picture>
 			<source type="image/avif" srcset={'/avif/technologies/spring.avif'} />
 			<img src={'/technologies/spring.png'} alt="Spring Boot Logo" />
+			<p class="text-center">Spring Boot</p>
+		</picture>
+		<picture>
+			<source type="image/avif" srcset={'/avif/technologies/java.avif'} />
+			<img src={'/technologies/java.png'} alt="Java Logo" />
+			<p class="text-center">Java</p>
 		</picture>
 		<picture>
 			<source type="image/avif" srcset={'/avif/technologies/mysql.avif'} />
 			<img src={'/technologies/mysql.png'} alt="MySQL Logo" />
+			<p class="text-center">MySQL</p>
 		</picture>
+	</div>
+	<div class="project-images">
+		<ImageViewer
+			src="realestate"
+			alt="real estate project image"
+			thumb="realestate-thumb"
+			avif={true}
+			height="5vh"
+		/>
 	</div>
 </section>
 
 <style lang="scss">
+	.project-images {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
 	section {
 		gap: 1rem;
 		display: flex;
 		flex-direction: column;
-		transition: 500ms all ease;
-	}
-
-	section:hover {
-		transform: translateY(-3%);
-		background-color: hsl(0, 0%, 97%);
 	}
 	h1 {
 		margin: 2rem;

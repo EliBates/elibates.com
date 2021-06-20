@@ -24,7 +24,7 @@ export const DB_TECHNOLOGIES: Array<Technology> = [
 
 export const BACK_END_TECHNOLOGIES: Array<Technology> = [
   {
-    name: 'Node JS',
+    name: 'Node JS / Express JS',
     imageUrl: '/technologies/nodejs',
     websiteUrl: '',
   },
@@ -34,23 +34,49 @@ export const BACK_END_TECHNOLOGIES: Array<Technology> = [
     websiteUrl: '',
   },
   {
-    name: 'Java',
-    imageUrl: '/technologies/java',
-    websiteUrl: '',
-  },
-  {
-    name: 'Kotlin',
-    imageUrl: '/technologies/kotlin',
-    websiteUrl: '',
-  },
-  {
     name: 'Google Firebase',
     imageUrl: '/technologies/firebase',
     websiteUrl: '',
   },
 ];
 
-export const FRONT_END_TECHNOLOGIES: Array<Technology> = [
+
+export const FRAMEWORKS: Array<Technology> = [
+
+  {
+    name: 'Next.JS',
+    imageUrl: '/technologies/nextjs',
+    websiteUrl: '',
+  },
+  {
+    name: 'React.JS',
+    imageUrl: '/technologies/react',
+    websiteUrl: '',
+  },
+  {
+    name: 'Vue.JS',
+    imageUrl: '/technologies/vue',
+    websiteUrl: '',
+  },
+  {
+    name: 'Svelte / SvelteKit',
+    imageUrl: '/technologies/svelte',
+    websiteUrl: '',
+  },
+  {
+    name: 'JQuery',
+    imageUrl: '/technologies/jquery',
+    websiteUrl: '',
+  },
+  {
+    name: 'Bootstrap 5',
+    imageUrl: '/technologies/bootstrap',
+    websiteUrl: '',
+  }
+  
+];
+
+export const CORE_TECHNOLOGIES: Array<Technology> = [
   {
     name: 'Javascript',
     imageUrl: '/technologies/javascript',
@@ -73,28 +99,13 @@ export const FRONT_END_TECHNOLOGIES: Array<Technology> = [
     websiteUrl: '',
   },
   {
-    name: 'JQuery',
-    imageUrl: '/technologies/jquery',
+    name: 'Java',
+    imageUrl: '/technologies/java',
     websiteUrl: '',
   },
   {
-    name: 'React JS',
-    imageUrl: '/technologies/react',
-    websiteUrl: '',
-  },
-  {
-    name: 'Bootstrap 5',
-    imageUrl: '/technologies/bootstrap',
-    websiteUrl: '',
-  },
-  {
-    name: 'Vue JS',
-    imageUrl: '/technologies/vue',
-    websiteUrl: '',
-  },
-  {
-    name: 'Svelte',
-    imageUrl: '/technologies/svelte',
+    name: 'Kotlin',
+    imageUrl: '/technologies/kotlin',
     websiteUrl: '',
   }
 ];
