@@ -96,7 +96,7 @@
 
 	h3 {
 		margin-top: 0.7rem;
-		text-align: left;
+		text-align: center;
 		color: hsl(0, 0%, 30%);
 	}
 	.wrapper {
@@ -111,7 +111,7 @@
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
-		flex: 20rem;
+		flex: 8rem;
 		background-color: hsl(0, 0%, 90%);
 		border-radius: 1rem;
 		padding: 0.5rem;

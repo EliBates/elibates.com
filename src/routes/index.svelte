@@ -18,16 +18,13 @@
 </svelte:head>
 
 {#if ready}
-	<section class="page flex">
-		<h2 class="typewriter">Hi my name is Eli!</h2>
-	</section>
-
-	<section
-		class="page main"
-		in:fly={{ y: 200, duration: 2000, delay: 2000 }}
-		out:fade={{ duration: 0 }}
-	>
-		<p>I'm a Full Stack Web Developer from the U.S. living in Zagreb, Croatia.</p>
+	<section class="page">
+		<div class="flex">
+			<h2 class="typewriter">Hi my name is Eli!</h2>
+		</div>
+		<p in:fly={{ y: 200, duration: 2000, delay: 2000 }} out:fade={{ duration: 0 }}>
+			I'm a Full Stack Web Developer from the U.S. living in Zagreb, Croatia.
+		</p>
 	</section>
 	<a class="hide-desktop" href="/contact">
 		<section
@@ -65,9 +62,9 @@
 		<div class="section-content">
 			<p>
 				This year I started tutoring students in web development practices. This has been a
-				rewarding experience so far helping others get into web development. Technologies I
-				typically teach include HTML, CSS, Javascript, PHP, and MySQL.
+				rewarding experience so far helping others get into web development.
 			</p>
+			<p>Technologies I typically teach include HTML, CSS, Javascript, PHP, and MySQL.</p>
 		</div>
 	</section>
 
@@ -147,6 +144,7 @@
 	.typewriter {
 		position: relative;
 		font-family: monospace;
+		margin-bottom: 1rem;
 	}
 
 	.typewriter::before,
@@ -211,7 +209,7 @@
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		@include respond-to('small') {
 			font-size: 1.5rem;
 		}

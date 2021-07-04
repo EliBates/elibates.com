@@ -70,8 +70,9 @@
 		height: 4rem;
 	}
 	.navLink {
+		padding-left: 2rem;
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		align-items: center;
 		color: hsl(0, 0%, 20%);
 		height: 100%;
