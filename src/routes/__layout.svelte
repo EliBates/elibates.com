@@ -4,8 +4,9 @@
 	import '$lib/global.scss';
 </script>
 
-<NavbarMobile />
 <Navbar />
+<NavbarMobile />
+
 <main>
 	<div class="container">
 		<slot />
@@ -44,9 +45,6 @@
 		width: 100%;
 		z-index: 0;
 		min-height: 120vh;
-		@include respond-to('small') {
-			display: flex;
-		}
 	}
 
 	.navbarDesktop {

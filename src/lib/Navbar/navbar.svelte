@@ -2,7 +2,7 @@
 	import Icon from 'svelte-awesome';
 	import {
 		faUser,
-		faChartBar,
+		faCode,
 		faFolderOpen,
 		faCommentsDollar
 	} from '@fortawesome/free-solid-svg-icons';
@@ -24,12 +24,12 @@
 		</li>
 		<li>
 			<a class="navLink" href="/"
-				><Icon data={faUser} scale="1.3" style="color: blue;" /><span>About Me</span></a
+				><Icon data={faUser} scale="1.3" style="color: blue;" /><span>Home</span></a
 			>
 		</li>
 		<li>
 			<a class="navLink" href="/skills"
-				><Icon data={faChartBar} scale="1.3" style="color: green;" /><span>Technologies</span></a
+				><Icon data={faCode} scale="1.3" style="color: green;" /><span>Technologies</span></a
 			>
 		</li>
 		<li>
