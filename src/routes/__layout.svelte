@@ -1,6 +1,8 @@
 <script>
 	import NavbarMobile from '$lib/Navbar/navbar-mobile.svelte';
 	import Navbar from '$lib/Navbar/navbar.svelte';
+	import CookieBanner from '$lib/Overlay/cookie-banner.svelte';
+	import { cookieModalClosed } from '$lib/store';
 	import '$lib/global.scss';
 </script>
 
@@ -12,6 +14,10 @@
 		<slot />
 	</div>
 </main>
+{#if !$cookieModalClosed}
+<CookieBanner />
+{/if}
+
 
 <style global lang="scss">
 	$color: rgb(0, 0, 0);

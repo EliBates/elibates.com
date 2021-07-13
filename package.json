@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/free-solid-svg-icons": "^5.15.3",
+		"@macfja/svelte-persistent-store": "^1.1.1",
 		"recaptcha-v3": "^1.9.1",
 		"svelte-awesome": "^2.3.2",
 		"validator": "^13.6.0"
