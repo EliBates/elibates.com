@@ -62,7 +62,7 @@
 	}
 	.thumb-img {
 		width: auto;
-		cursor: pointer;
+		cursor: zoom-in;
 	}
 	.viewer-img {
 		position: fixed;
